@@ -31,7 +31,7 @@ static void __generate_population(Lanton_t *lanton)
 
 		for(uint32_t j = 0; j < lanton->lookuptb_size; j++)
 		{
-			lanton->permutation[j][i] = (offset + j * skip) % lanton->lookuptb_size;
+			lanton->permutation[i][j] = (offset + j * skip) % lanton->lookuptb_size;
 		}
 	}
 }
